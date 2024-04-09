@@ -1,0 +1,16 @@
+#002b59 - blue background color
+
+//Section with background image
+
+<section
+        className="flex flex-col items-center justify-center h-screen gap-5"
+        style={{
+          backgroundImage: `url("${onlineEd.src}")`, // Set background image
+          backgroundSize: "cover", // Cover the entire section
+          backgroundPosition: "center", // Center the background image
+        }}
+      >
+        <h1 className="text-2xl font-bold">Flexible Online Higher Education</h1>
+        <p>Learn At Your Own Pace</p>
+        <Button />
+</section>

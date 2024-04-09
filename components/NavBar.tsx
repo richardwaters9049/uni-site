@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <section>
             <div className="nav-container">
-                <div className="navbar p-10 bg-red-500 flex justify-between text-lg">
+                <div className="navbar p-5 bg-white flex justify-between text-2xl text-darkBlue tracking-widest">
                     <Link href="/">Logo</Link>
                     <Link href="courses">Courses</Link>
                     <Link href="/discover">Discover</Link>
