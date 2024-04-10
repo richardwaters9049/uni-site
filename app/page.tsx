@@ -8,11 +8,6 @@ import logoImage from "@/public/images/header_logo_white.png";
 import { Button } from "@/components/ui/button";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineGridView } from "react-icons/md";
-// import { MdSupervisorAccount } from "react-icons/md";
-
-// import Button from "@/components/Button";
-// import onlineEd from "@/public/images/online-ed.jpg";
-// import { url } from "inspector";
 
 export default function Home() {
   return (
@@ -35,14 +30,14 @@ export default function Home() {
               Find the right course for you and learn at your own pace.
             </h3>
 
-
             <p className="text-white text-xl tracking-widest">
               Enter phrases such as &apos;engineering,&apos;
-              &apos;business,&apos; or &apos;OTHM&apos; - click &apos;Search Courses&apos;.
+              &apos;business,&apos; or &apos;OTHM&apos; - Click &apos;Search
+              Courses&apos;.
             </p>
             <p className="text-white text-xl tracking-widest">
-              Click
-              &apos;View All&apos; to see all the courses we have to offer.
+              Click &apos;View All&apos; to see all the courses we have to
+              offer.
             </p>
           </div>
 
@@ -54,10 +49,15 @@ export default function Home() {
               className="bg-white rounded-lg w-1/2 h-10 p-6 tracking-widest"
               placeholder="Search.."
             />
-            <Button className="p-6 text-2xl w-1/3 bg-uniPink"><p className="px-4">View All</p><MdOutlineGridView /></Button>
+            <Button className="p-6 text-2xl w-1/3 bg-uniPink">
+              <p className="px-4">View All</p>
+              <MdOutlineGridView />
+            </Button>
           </div>
 
-          <Button className="p-6 text-2xl w-1/2 bg-uniLightBlue"><p className="px-4">Search Courses</p> <FaSearch /></Button>
+          <Button className="p-6 text-2xl w-1/2 bg-uniLightBlue">
+            <p className="px-4">Search Courses</p> <FaSearch />
+          </Button>
         </div>
 
         <Lottie
