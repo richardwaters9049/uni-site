@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import NavBar from "@/components/NavBar";
 import Lottie from "lottie-react";
 import animationData from "@/public/images/animation.json";
 import logoImage from "@/public/images/header_logo_white.png";
@@ -12,7 +11,7 @@ import { MdOutlineGridView } from "react-icons/md";
 export default function Home() {
   return (
     <main className="bg-darkBlue w-full h-screen">
-      <NavBar />
+
       <section className="flex justify-evenly items-center gap-5 p-8 bg-darkBlue ">
         <div className="search-section flex flex-col justify-center gap-10">
           <Image
