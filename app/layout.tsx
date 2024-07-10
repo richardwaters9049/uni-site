@@ -1,3 +1,4 @@
+// app/layout.tsx or pages/_app.tsx
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
@@ -20,10 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <head />
       <body className={mont.className}>
         <NavBar />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }

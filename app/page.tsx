@@ -7,11 +7,10 @@ import logoImage from "@/public/images/header_logo_white.png";
 import { Button } from "@/components/ui/button";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineGridView } from "react-icons/md";
-
+import { IoInformationCircle } from "react-icons/io5";
 export default function Home() {
   return (
     <main className="bg-darkBlue w-full h-screen">
-
       <section className="flex justify-evenly items-center gap-5 p-8 bg-darkBlue ">
         <div className="search-section flex flex-col justify-center gap-10">
           <Image
@@ -48,15 +47,21 @@ export default function Home() {
               className="bg-white rounded-lg w-1/2 h-10 p-6 tracking-widest"
               placeholder="Search.."
             />
-            <Button className="p-6 text-2xl w-1/3 bg-uniPink">
-              <p className="px-4">View All</p>
+            <Button className="p-6 text-2xl w-1/2 bg-uniPink">
+              <p className="px-2">View All</p>
               <MdOutlineGridView />
             </Button>
           </div>
+          <div className="info-div flex gap-6">
+            <Button className="p-6 text-2xl w-1/2 bg-yellow-500">
+              <p className="px-2">Info Request</p> <IoInformationCircle />
+            </Button>
 
-          <Button className="p-6 text-2xl w-1/2 bg-uniLightBlue">
-            <p className="px-4">Search Courses</p> <FaSearch />
-          </Button>
+            <Button className="p-6 text-2xl w-1/2 bg-uniLightBlue">
+              <p className="px-2">Course Application</p> <FaSearch />
+            </Button>
+
+          </div>
         </div>
 
         <Lottie
@@ -69,3 +74,4 @@ export default function Home() {
     </main>
   );
 }
+
